@@ -2,6 +2,7 @@ import pkg_questao_um.Departamento;
 import pkg_questao_um.Pessoa;
 import pkg_questao_um.Universidade;
 import pkg_questao_dois.Elevador;
+import pkg_questao_tres.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -54,6 +55,35 @@ public class App {
         System.out.println(elevador.Entra() + "\n");
         System.out.println(elevador.sobe() + "\n");
 
-        System.out.println(elevador);
+        System.out.println(elevador + "\n");
+
+        // Questão 3
+        System.out.println("------------TV---------------");
+        Televisao tv = new Televisao(15);
+        ControleRemoto cr = new ControleRemoto(tv);
+
+        cr.AumentarCanal();
+        cr.AumentarCanal();
+        cr.AumentarCanal();
+
+        cr.DiminuirCanal();
+        cr.DiminuirCanal();
+        cr.DiminuirCanal();
+        cr.DiminuirCanal();
+        cr.DiminuirCanal();
+
+        cr.AumentarSom();
+        cr.AumentarSom();
+        cr.AumentarSom();
+        cr.AumentarSom();
+        cr.AumentarSom();
+        cr.AumentarSom();
+        cr.AumentarSom();
+        cr.AumentarSom();
+        cr.AumentarSom();
+
+        cr.trocarCanal(5);
+
+        cr.ShowVolECanal();
     }
 }
